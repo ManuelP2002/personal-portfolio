@@ -376,9 +376,25 @@
                     <textarea id="message" name="message" data-i18n-placeholder="form-message" placeholder="Your Message" required></textarea>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LdFRQgrAAAAAPPBanYCIq2UnQkBvFIIqdhHJW8U"></div>
+                <div id="captchaError" style="color: red; display: none;">Please complete the captcha before submitting.</div>
                 <button type="submit" class="btn primary-btn" data-i18n="form-submit">Send Message</button>
             </form>
         </div>
+        <script>
+            function validateForm() {
+                // Check if the captcha is completed
+                var captchaResponse = grecaptcha.getResponse();
+                if(captchaResponse.length === 0) {
+                    // Captcha not completed
+                    document.getElementById('captchaError').style.display = 'block';
+                    return false; // Prevent form submission
+                } else {
+                    // Captcha completed
+                    document.getElementById('captchaError').style.display = 'none';
+                    return true; // Allow form submission
+                }
+            }
+            </script>
     </section>
 
     <footer>
