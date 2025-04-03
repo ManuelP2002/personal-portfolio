@@ -361,10 +361,8 @@
         </div>
         <!-- Contact form -->
         <div class="contact-form">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="4de35877-f2c3-4e29-bfc8-9ad53c558ec9">
-                <input type="hidden" name="from_name" value="Website Contact Form">
-                <input type="hidden" name="subject" value="New Contact Form Submission">
                 <div class="form-group">
                     <input type="text" id="name" name="name" data-i18n-placeholder="form-name" placeholder="Your Name" required>
                 </div>
@@ -377,53 +375,10 @@
                 <div class="form-group">
                     <textarea id="message" name="message" data-i18n-placeholder="form-message" placeholder="Your Message" required></textarea>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LdFRQgrAAAAAPPBanYCIq2UnQkBvFIIqdhHJW8U"></div>
-                <div id="captchaError" style="color: red; display: none;">Please complete the captcha before submitting.</div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <button type="submit" class="btn primary-btn" data-i18n="form-submit">Send Message</button>
             </form>
         </div>
-        <script>
-            function validateForm() {
-                // Check if the captcha is completed
-                var captchaResponse = grecaptcha.getResponse();
-                if(captchaResponse.length === 0) {
-                    // Captcha not completed
-                    document.getElementById('captchaError').style.display = 'block';
-                    return false; // Prevent form submission
-                } else {
-                    // Captcha completed
-                    document.getElementById('captchaError').style.display = 'none';
-                    
-                    // Make sure the access key is included in the form data
-                    var accessKeyInput = document.querySelector('input[name="access_key"]');
-                    if (!accessKeyInput || !accessKeyInput.value) {
-                        console.error("Access key is missing!");
-                        return false;
-                    }
-                    
-                    // To debug - log the form data being sent
-                    console.log("Form data:", new FormData(document.getElementById('contactForm')));
-                    
-                    return true; // Allow form submission
-                }
-            }
-            
-            // Add event listener to check if the page has loaded the reCAPTCHA script
-            document.addEventListener('DOMContentLoaded', function() {
-                // Check if reCAPTCHA script is loaded
-                if (typeof grecaptcha === 'undefined') {
-                    console.error("reCAPTCHA script is not loaded!");
-                    // Add reCAPTCHA script if not already present
-                    if (!document.querySelector('script[src*="www.google.com/recaptcha/api.js"]')) {
-                        var script = document.createElement('script');
-                        script.src = "https://www.google.com/recaptcha/api.js";
-                        script.async = true;
-                        script.defer = true;
-                        document.head.appendChild(script);
-                    }
-                }
-            });
-            </script>
     </section>
 
     <footer>
@@ -464,7 +419,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/theme-switcher.js"></script>
