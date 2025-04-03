@@ -393,9 +393,36 @@
                 } else {
                     // Captcha completed
                     document.getElementById('captchaError').style.display = 'none';
+                    
+                    // Make sure the access key is included in the form data
+                    var accessKeyInput = document.querySelector('input[name="access_key"]');
+                    if (!accessKeyInput || !accessKeyInput.value) {
+                        console.error("Access key is missing!");
+                        return false;
+                    }
+                    
+                    // To debug - log the form data being sent
+                    console.log("Form data:", new FormData(document.getElementById('contactForm')));
+                    
                     return true; // Allow form submission
                 }
             }
+            
+            // Add event listener to check if the page has loaded the reCAPTCHA script
+            document.addEventListener('DOMContentLoaded', function() {
+                // Check if reCAPTCHA script is loaded
+                if (typeof grecaptcha === 'undefined') {
+                    console.error("reCAPTCHA script is not loaded!");
+                    // Add reCAPTCHA script if not already present
+                    if (!document.querySelector('script[src*="www.google.com/recaptcha/api.js"]')) {
+                        var script = document.createElement('script');
+                        script.src = "https://www.google.com/recaptcha/api.js";
+                        script.async = true;
+                        script.defer = true;
+                        document.head.appendChild(script);
+                    }
+                }
+            });
             </script>
     </section>
 
