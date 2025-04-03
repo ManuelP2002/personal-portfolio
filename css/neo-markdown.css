@@ -877,7 +877,12 @@ body.neobrutalism .contact-text h3 {
 }
 
 body.neobrutalism .contact-form {
-    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 2rem;
+    border: var(--neo-border-width) solid var(--neo-border);
+    box-shadow: var(--neo-shadow-offset) var(--neo-shadow-offset) 0 var(--neo-shadow-color);
+    background: var(--neo-card);
 }
 
 body.neobrutalism .form-group {

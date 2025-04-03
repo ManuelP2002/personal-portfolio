@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goli Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="css/neo-markdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +75,7 @@
                         <h3 data-i18n="profile-heading">PROFILE</h3>
                     </div>
                     <div class="profile-image">
-                        <img src="imgs/profile.png" alt="Character-profile">
+                        <img src="img/profile.png" alt="Character-profile">
                     </div>
                     <div class="profile-name" >Manuel Portilla</div>
                     <div class="profile-title" data-i18n="profile-title">Systems Engineer</div>
@@ -167,7 +168,8 @@
                 </div>
                  <!-- Actions card -->
                  <div class="character-actions">
-                    <a href="#" class="btn primary-btn" data-i18n="download-btn">Download CV</a>
+                    <a href="#" class="btn primary-btn" data-i18n="download-btn" id="cvDownload"  data-cv-en="cvs\Manuel_Portilla_CV_EN.pdf"
+                    data-cv-es="cvs\Manuel_Portilla_CV_ES.pdf">Download CV</a>
                 </div>
             </div>
         </div>
@@ -350,14 +352,14 @@
                     </div>
                     <div class="contact-text">
                         <h3 data-i18n="contact-website">Website</h3>
-                        <p>URL</p>
+                        <a href="#" target="goli-dev.netlify.app">goli-dev.netlify.app</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Contact form -->
         <div class="contact-form">
-            <form id="contactForm">
+            <form id="contactForm" action="https://formsubmit.co/goli.developer@gmail.com" method="POST">
                 <div class="form-group">
                     <input type="text" id="name" name="name" data-i18n-placeholder="form-name" placeholder="Your Name" required>
                 </div>

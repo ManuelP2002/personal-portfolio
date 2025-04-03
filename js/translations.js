@@ -46,6 +46,7 @@ const translations = {
     "details-experience": "Experience",
     "experience-text": "2 years",
     "download-btn": "Download CV",
+    cvUrl: "/cvs/Manuel_Portilla_CV_EN.pdf",
 
     "skills-heading": "My Skills",
 
@@ -153,6 +154,7 @@ const translations = {
     "details-experience": "Experiencia",
     "experience-text": "2 años",
     "download-btn": "Descargar CV",
+    cvUrl: "/cvs/Manuel_Portilla_CV_ES.pdf",
 
     "skills-heading": "Mis Habilidades",
 

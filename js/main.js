@@ -7,7 +7,7 @@ const projectitems = document.querySelectorAll('.project-item');
 const skillBars = document.querySelectorAll('.skill-progress');
 const contactForm = document.getElementById('contactForm');
 const typedTextElement = document.querySelector('.typed-text');
-
+const cvButton = document.getElementById('cvDownload');
 
 // Language switcher
 let currentLanguage = localStorage.getItem('language') || 'en';
@@ -49,6 +49,11 @@ function  updateLanguage(lang) {
     });
 
     updateTypedText();
+
+    if (cvButton) {
+        cvButton.href = cvButton.getAttribute(`data-cv-${lang}`)
+        cvButton.download = `Manuel_Portilla_CV_${lang.toUpperCase()}.pdf`
+    }
 }
 
 // Language switcher click event
@@ -68,6 +73,17 @@ document.querySelectorAll('.language-switcher').forEach(switcher => {
     });
 });
 
+// CV download click event
+cvButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    const link = document.createElement('a');
+    link.href = this.href;
+    link.download = this.download;
+    link.style.display = 'none'
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
 
 // Typed text effect
 let typedTextString = [];
