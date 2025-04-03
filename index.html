@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goli Portfolio</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" sizes="any">
-    <link rel="icon" href="imgs/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="stylesheet" href="css/neo-markdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,8 +56,8 @@
                     <a href="#contact" class="btn secondary-btn" data-i18n="contact-me-btn">Contact me</a>
                 </div>
                 <div class="social-icons">
-                    <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ManuelP2002" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/goli-dev23" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -369,11 +369,12 @@
                     <input type="text" id="email" name="email" data-i18n-placeholder="form-email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="subject" name="subject" data-i18n-placeholder="form-subject" placeholder="Subject" required>
+                    <input type="text" id="subject" name="_subject" data-i18n-placeholder="form-subject" placeholder="Subject" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="message" name="message" data-i18n-placeholder="form-message" placeholder="Your Message" required>
+                    <textarea id="message" name="message" data-i18n-placeholder="form-message" placeholder="Your Message" required></textarea>
                 </div>
+                <input type="text" name="_honey" style="display:none">
                 <button type="submit" class="btn primary-btn" data-i18n="form-submit">Send Message</button>
             </form>
         </div>
