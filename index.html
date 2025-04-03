@@ -361,8 +361,10 @@
         </div>
         <!-- Contact form -->
         <div class="contact-form">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
                 <input type="hidden" name="access_key" value="4de35877-f2c3-4e29-bfc8-9ad53c558ec9">
+                <input type="hidden" name="from_name" value="Website Contact Form">
+                <input type="hidden" name="subject" value="New Contact Form Submission">
                 <div class="form-group">
                     <input type="text" id="name" name="name" data-i18n-placeholder="form-name" placeholder="Your Name" required>
                 </div>
