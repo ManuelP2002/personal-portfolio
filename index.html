@@ -375,7 +375,7 @@
                 <div class="form-group">
                     <textarea id="message" name="message" data-i18n-placeholder="form-message" placeholder="Your Message" required></textarea>
                 </div>
-                <input type="text" name="_honey" style="display:none">
+                <div class="g-recaptcha" data-sitekey="6LdFRQgrAAAAAPPBanYCIq2UnQkBvFIIqdhHJW8U"></div>
                 <button type="submit" class="btn primary-btn" data-i18n="form-submit">Send Message</button>
             </form>
         </div>
@@ -419,7 +419,8 @@
     </div>
 
     <!-- Scripts -->
-     <script src="js/translations.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/theme-switcher.js"></script>
 </body>
