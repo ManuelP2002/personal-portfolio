@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goli Portfolio</title>
+    <link rel="stylesheet" href="css/neo-markdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="neobrutalism">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" data-i18n="header.logo">Goli's Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="language-switchers">
+                    <button class="language-switcher" data-lang="en">EN</button>
+                    <button class="language-switcher" data-lang="es">ES</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><span data-i18n="greeting">Greetings! I'm</span> <span class="highlight">Manuel Portilla</span></h1>
+                <h2>
+                    <span data-i18n="flavor">And I'm a</span> 
+                    <span class="typed-text"></span>
+                </h2>
+                <p data-i18n="welcome"> Welcome to my portfolio website</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn" data-i18n="my-work-btn">My work</a>
+                    <a href="#contact" class="btn secondary-btn" data-i18n="contact-me-btn">Contact me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="character-sheet">Character Sheet</h2>
+                <div class="section-line">
+                </div>
+            </div>
+            <div class="character-sheet">
+                <!-- Profile card -->
+                <div class="character-profile">
+                    <div class="profile-header">
+                        <h3 data-i18n="profile-heading">PROFILE</h3>
+                    </div>
+                    <div class="profile-image">
+                        <img src="imgs/profile.png" alt="Character-profile">
+                    </div>
+                    <div class="profile-name" >Manuel Portilla</div>
+                    <div class="profile-title" data-i18n="profile-title">Systems Engineer</div>
+                    <div class="profile-level">
+                        <span class="level-label">LVL</span>
+                        <span class="level-value">2</span>
+                    </div>
+                </div>
+                <!-- Stats card -->
+                <div class="character-stats">
+                    <div class="stats-header">
+                        <h3 data-i18n="stats-heading">STATS</h3>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-name" data-i18n="creativity-stat">Creativity</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%;"></div>
+                            </div>
+                            <div class="stat-value">90</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-name" data-i18n="coding-stat">Coding</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 80%;"></div>
+                            </div>
+                            <div class="stat-value">80</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-name" data-i18n="problem-stat">Problem Solving</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%;"></div>
+                            </div>
+                            <div class="stat-value">85</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-name" data-i18n="communication-stat">Communication</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 78%;"></div>
+                            </div>
+                            <div class="stat-value">78</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bio card -->
+                <div class="character-bio">
+                    <div class="bio-header">
+                        <h3 data-i18n="bio-heading">BIO</h3>
+                    </div>
+                    <div class="bio-content">
+                        <p data-i18n="bio-text-1">text1</p>
+                        <p data-i18n="bio-text-2">text2</p>
+                    </div>
+                </div>
+                <!-- Details card -->
+                <div class="character-details">
+                    <div class="details-header">
+                        <h3 data-i18n="details-heading">DETAILS</h3>
+                    </div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa fa-envelope"></i></div>
+                            <div class="detail-info">
+                                <h4 data-i18n="details-email">Email</h4>
+                                <p>goli.developer@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <div class="detail-info">
+                                <h4 data-i18n="details-location">Location</h4>
+                                <p>Bucaramanga, COL</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa fa-briefcase"></i></div>
+                            <div class="detail-info">
+                                <h4 data-i18n="details-availability">Availability</h4>
+                                <p data-i18n="availability-text">Open to work</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa fa-graduation-cap"></i></div>
+                            <div class="detail-info">
+                                <h4 data-i18n="details-experience">Experience</h4>
+                                <p data-i18n="experience-text">2 years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Actions card -->
+                 <div class="character-actions">
+                    <a href="#" class="btn primary-btn" data-i18n="download-btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="skills-heading">My Skills</h2>
+                <div class="section-line">
+                </div>
+            </div>
+        </div>
+        <div class="skills-content">
+            <div class="skill-category">
+                <h3 data-i18n="skills.skill-section-1">Programming & Data</h3>
+                <ul class="skill-list">
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Plotly</li>
+                    <li>Dash</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3 data-i18n="skills.skill-section-2">Technologies & Tools</h3>
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Linux</li>
+                    <li>Unity Engine</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PowerShell</li>
+                    <li>Figma</li>
+                    <li>Notion</li>
+                    <li>Obsidian</li>
+                    <li>Excel</li>
+                    <li>Google Sheets</li>
+                    <li>Office Suite</li>
+                    <li>Google Suite</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3 data-i18n="skills.skill-section-3">Languages</h3>
+                <ul class="skill-list">
+                    <li data-i18n="skills.language-1">English (C1)</li>
+                    <li data-i18n="skills.language-2">Spanish (Native)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="projects-heading">My Projects</h3>
+                    <div class="section-line">
+                    </div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="projectFilters.filter-all">All</button>
+                <button class="filter-btn" data-filter="Game Dev" data-i18n="projectFilters.filter-game-dev">Game Development</button>
+                <button class="filter-btn" data-filter="Game Des" data-i18n="projectFilters.filter-game-des">Game Design</button>
+                <button class="filter-btn" data-filter="Data" data-i18n="projectFilters.filter-data">Data</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-item" data-category="Game Dev">
+                    <div class="project-img">
+                        <img src="" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.project-1-heading">Project Name</h3>
+                        <p data-i18n="projects.project-1-description">Project Description</p>
+                        <div class="project-tech">
+                            <span>tech 1</span>
+                            <span>tech 2</span>
+                            <span>tech 3</span>
+                            <span>tech 4</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="Game Des">
+                    <div class="project-img">
+                        <img src="" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.project-2-heading">Project Name</h3>
+                        <p data-i18n="projects.project-2-description">Project Description</p>
+                        <div class="project-tech">
+                            <span>tech 1</span>
+                            <span>tech 2</span>
+                            <span>tech 3</span>
+                            <span>tech 4</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="Data">
+                    <div class="project-img">
+                        <img src="" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.project-3-heading">Project Name</h3>
+                        <p data-i18n="projects.project-3-description">Project Description</p>
+                        <div class="project-tech">
+                            <span>tech 1</span>
+                            <span>tech 2</span>
+                            <span>tech 3</span>
+                            <span>tech 4</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="#" class="btn primary-btn" data-i18n="view-more-btn">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact-me-heading">Contact Me</h2>
+                <div class="section-line">
+                </div>
+            </div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact-location">Location</h3>
+                        <p>Bucaramanga, Santander - COL</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact-email">Email</h3>
+                        <p>goli.developer@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact-phone">Phone</h3>
+                        <p>(+57) 301 7978 154</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact-website">Website</h3>
+                        <p>URL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact form -->
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" data-i18n-placeholder="form-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" data-i18n-placeholder="form-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" data-i18n-placeholder="form-subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="message" name="message" data-i18n-placeholder="form-message" placeholder="Your Message" required>
+                </div>
+                <button type="submit" class="btn primary-btn" data-i18n="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 data-i18n="footer-heading">Portfolio</h2>
+                    <p data-i18n="footer-description">Developing creative and fun experiences</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links">
+                        <h3 data-i18n="footer-links">Quick Links</h3>
+                        <ul>
+                            <li><a href="#home" data-i18n="footer.home">Home</a></li>
+                            <li><a href="#about" data-i18n="footer.about">About</a></li>
+                            <li><a href="#skills" data-i18n="footer.skills">Skills</a></li>
+                            <li><a href="#projects" data-i18n="footer.projects">Projects</a></li>
+                            <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p data-i18n="footer-copy">&copy; 2025 Manuel Portilla. Systems Engineer.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+     <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+</html>
