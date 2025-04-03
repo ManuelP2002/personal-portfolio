@@ -59,11 +59,9 @@ function  updateLanguage(lang) {
 // Language switcher click event
 document.querySelectorAll('.language-switcher').forEach(switcher => {
     switcher.addEventListener('click', function() {
-        console.log('Language button clicked');
         const lang = this.getAttribute('data-lang');
-        console.log('Selected language:', lang);
+        
         if (translations[lang]) {
-            console.log('Valid language found');
             updateLanguage(lang);
             document.querySelectorAll('.language-switcher').forEach(btn => {
                 btn.classList.remove('active');
@@ -162,6 +160,16 @@ window.addEventListener('scroll', () => {
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.classList.remove('menu-open')
+    });
 });
 
 // Project Filtering

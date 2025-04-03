@@ -35,9 +35,13 @@ const translations = {
     "coding-stat": "Coding",
     "problem-stat": "Problem Solving",
     "communication-stat": "Communication",
+    "team-work-stat": "Team Work",
+    "learning-stat": "Learning",
+    "adaptability-stat": "Adaptability",
     "bio-heading": "BIO",
-    "bio-text-1": "Systems Engineer focused on agile methodologies for software development, IT service management under the ITIL model, and multimedia development",
-    "bio-text-2": "Committed to implementing clean code, documentation, and organization.",
+    "bio-text-1": "Innovative Systems Engineer specializing in multimedia development, including video game creation, data science, and data analysis. Passionate about leveraging agile methodologies and IT service management under the ITIL model to drive efficiency and scalability.",
+    "bio-text-2": "Dedicated to crafting high-quality, maintainable software by implementing clean code, best practices, and thorough documentation. Adept at problem-solving, optimizing workflows, and fostering collaborative environments to deliver impactful solutions.",
+    "bio-text-3": "Continuously learning and building new projects to enhance my skills, stay ahead of industry trends, and push the boundaries of innovation.",
     "details-heading": "DETAILS",
     "details-email": "Email",
     "details-location": "Location",
@@ -74,12 +78,16 @@ const translations = {
         "2D Multiplayer Roguelike, with procedural generation",
 
       // Project #2
-      "project-2-heading": "Project Name",
-      "project-2-description": "Project Description",
+      "project-2-heading": "Chrono Pals GDD",
+      "project-2-description": "Game Design Document made for Chrono Pals (ES)",
 
       // Project #3
-      "project-3-heading": "Project Name",
-      "project-3-description": "Project Description",
+      "project-3-heading": "Space X Falcon 9 landing predictions",
+      "project-3-description": "Using Machine Learning to predict successful launches of the Falcon 9 Model",
+
+      // Project #4
+      "project-4-heading": "Simple crossword",
+      "project-4-description": "Simple 2D crossword game, custom crosssword creation",
     },
 
     "view-more-btn": "View More Projects",
@@ -93,8 +101,8 @@ const translations = {
     "form-subject": "Subject",
     "form-message": "Your Message",
     "form-submit": "Send Message",
-    "footer-heading": "Portfolio",
-    "footer-description": "Developing creative and fun experiences",
+    "footer-description-1": "Developing creative and fun experiences",
+    "footer-description-2": "Working efficiently with data and insights",
     "footer-links": "Quick Links",
 
     footer: {
@@ -144,9 +152,13 @@ const translations = {
     "coding-stat": "Programación",
     "problem-stat": "Resolución de Problemas",
     "communication-stat": "Comunicación",
+    "learning-stat": "Aprendizaje",
+    "adaptability-stat": "Adaptabilidad",
+    "team-work-stat": "Trabajo en Equipo",
     "bio-heading": "BIOGRAFÍA",
-    "bio-text-1": "Ingeniero de Sistemas con enfoque hacia las metodologías agiles para el desarrollo de software, la gestión de servicios IT bajo el modelo ITIL y el desarrollo multimedia.",
-    "bio-text-2": "Comprometido a la implementación de código limpio, la documentación y la organización.",
+    "bio-text-1": "Ingeniero de Sistemas innovador, especializado en desarrollo multimedia, incluyendo creación de videojuegos, ciencia de datos y análisis de datos. Apasionado por aplicar metodologías ágiles y gestión de servicios de TI bajo el modelo ITIL para impulsar la eficiencia y escalabilidad.",
+    "bio-text-2": "Comprometido con la creación de software de alta calidad y fácil mantenimiento, implementando código limpio, mejores prácticas y documentación detallada. Hábil en resolución de problemas, optimización de flujos de trabajo y en fomentar entornos colaborativos para entregar soluciones impactantes.",
+    "bio-text-3": "En constante aprendizaje y desarrollo de nuevos proyectos para mejorar mis habilidades, mantenerme a la vanguardia del sector y ampliar los límites de la innovación.",
     "details-heading": "DETALLES",
     "details-email": "Correo",
     "details-location": "Ubicación",
@@ -184,12 +196,16 @@ const translations = {
       "project-1-description": "Roguelike multijugador 2D, con generación procedural",
 
       // Project #2
-      "project-2-heading": "Nombre del Proyecto",
-      "project-2-description": "Descripción del Proyecto",
+      "project-2-heading": "Chrono Pals DDJ",
+      "project-2-description": "Documento de Diseño de Juego para Chrono Pals",
 
       // Project #3
-      "project-3-heading": "Nombre del Proyecto",
-      "project-3-description": "Descripción del Proyecto",
+      "project-3-heading": "Space X Falcon 9 predicciones de aterrizaje",
+      "project-3-description": "Usando Machine Learning para predecir aterrizajes exitosos del modelo Falcon 9",
+       
+      // Project #4
+      "project-4-heading": "Crucigrama simple",
+      "project-4-description": "Crucigrama 2D simple, personalizable",
     },
 
     "view-more-btn": "Ver Más Proyectos",
@@ -203,8 +219,8 @@ const translations = {
     "form-subject": "Asunto",
     "form-message": "Tu Mensaje",
     "form-submit": "Enviar Mensaje",
-    "footer-heading": "Portafolio",
-    "footer-description": "Desarrollando experiencias creativas y divertidas",
+    "footer-description-1": "Desarrollando experiencias creativas y divertidas",
+    "footer-description-2": "Trabajando con datos y perspectivas de manera eficiente",
     "footer-links": "Enlaces Rápidos",
 
     footer: {

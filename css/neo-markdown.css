@@ -763,12 +763,13 @@ body.neobrutalism .project-item:hover {
 body.neobrutalism .project-img {
     overflow: hidden;
     height: 250px;
+    border-bottom: var(--neo-border-width) solid var(--neo-border);
 }
 
 body.neobrutalism .project-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-position: center;
     transition: var(--neo-transition);
 }
 
@@ -789,18 +790,20 @@ body.neobrutalism .project-info p {
 body.neobrutalism .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 8px;
+    margin-bottom: 1.2rem;
 }
 
 body.neobrutalism .project-tech span {
-    padding: 5px 10px;
+    padding: 4px 12px;
     background-color: var(--neo-accent);
     color: var(--neo-text);
     border: 2px solid var(--neo-border);
     border-radius: var(--neo-border-radius);
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    text-align: center;
+    min-width: 60px;
 }
 
 body.neobrutalism .project-links {
@@ -1083,9 +1086,39 @@ body.neobrutalism .back-to-top:hover {
     .details-grid {
         grid-template-columns: 1fr;
     }
+
+    .language-switchers {
+        padding: 20px;
+        display: block;
+    }
+
+    .stat-item {
+        grid-template-columns: 140px 1fr 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    body.neobrutalism::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--neo-transition);
+        pointer-events: none;
+    }
+    
+    body.neobrutalism.menu-open::after {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
     body.neobrutalism .nav-links {
         position: fixed;
         top: 0;
@@ -1099,8 +1132,21 @@ body.neobrutalism .back-to-top:hover {
         justify-content: center;
         transition: var(--neo-transition);
         z-index: 1001;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
     
+    body.neobrutalism .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    body.neobrutalism .nav-links a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
     body.neobrutalism .nav-links.active {
         right: 0;
     }
@@ -1108,6 +1154,7 @@ body.neobrutalism .back-to-top:hover {
     body.neobrutalism .hamburger {
         display: block;
         z-index: 1002;
+        cursor: pointer;
     }
     
     body.neobrutalism .hamburger.active span:nth-child(1) {
@@ -1163,6 +1210,10 @@ body.neobrutalism .back-to-top:hover {
     body.neobrutalism .skill-list {
         grid-template-columns: 1fr;
     }
+
+    .stat-item {
+        grid-template-columns: 140px 1fr 40px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1199,6 +1250,68 @@ body.neobrutalism .back-to-top:hover {
     }
     
     .stat-item {
+        grid-template-columns: 150px 1fr 40px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .detail-item {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .detail-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .detail-info p {
+        font-size: 0.85rem;
+    }
+
+    .stat-item {
         grid-template-columns: 100px 1fr 40px;
+    }
+    
+    .stat-name {
+        font-size: 0.85rem;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-name {
+        font-size: 1.2rem;
+    }
+    
+    .profile-title {
+        font-size: 0.9rem;
+    }
+    
+    .character-sheet > div {
+        padding: 15px;
+    }
+    
+    .character-sheet .profile-header,
+    .character-sheet .stats-header,
+    .character-sheet .bio-header,
+    .character-sheet .details-header {
+        padding: 6px 10px;
+        margin: -15px -15px 15px -15px;
+    }
+    
+    .character-sheet h3 {
+        font-size: 1rem;
     }
 }
