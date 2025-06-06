@@ -655,24 +655,43 @@ body.neobrutalism .about {
 /* ===== SKILLS SECTION ===== */
 body.neobrutalism .skills-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 1150px;
     margin: 0 auto;
 }
 
+body.neobrutalism .skill-category {
+    border: var(--neo-border-width) solid var(--neo-border);
+    border-radius: var(--neo-border-radius);
+    background-color: var(--neo-background);
+    box-shadow: var(--neo-shadow-offset) var(--neo-shadow-offset) 0 var(--neo-shadow-color);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body.neobrutalism .skill-header {
+    background-color: var(--neo-primary);
+    color: var(--neo-background);
+    padding: 8px 15px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: var(--neo-border-width) solid var(--neo-border);
+}
+
 body.neobrutalism .skill-category h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: var(--neo-primary);
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--neo-background);
 }
 
 /* Skill Bullets */
 body.neobrutalism .skill-list {
     list-style: none;
     padding-left: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -680,12 +699,25 @@ body.neobrutalism .skill-list {
 
 body.neobrutalism .skill-list li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 35px;
     margin-bottom: 0;
     font-weight: 600;
     color: var(--neo-text);
     transition: var(--neo-transition);
     font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+body.neobrutalism .skill-list li .skill-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: var(--neo-transition);
 }
 
 body.neobrutalism .skill-list li::before {
@@ -696,6 +728,7 @@ body.neobrutalism .skill-list li::before {
     transform: translateY(-50%);
     width: 12px;
     height: 12px;
+    display: none; /* Hide the original bullet */
     background-color: var(--neo-primary);
     border: 2px solid var(--neo-border);
     box-shadow: 2px 2px 0 var(--neo-shadow-color);
@@ -704,6 +737,10 @@ body.neobrutalism .skill-list li::before {
 
 body.neobrutalism .skill-list li:hover {
     transform: translateX(5px);
+}
+
+body.neobrutalism .skill-list li:hover .skill-logo {
+    transform: translateY(-50%) rotate(10deg);
 }
 
 body.neobrutalism .skill-list li:hover::before {

@@ -50,14 +50,16 @@ const translations = {
     "details-experience": "Experience",
     "experience-text": "2 years",
     "download-btn": "Download CV",
-    cvUrl: "cvs/CV_Manuel_Portilla_EN.pdf",
+    cvUrl: "/cvs/Manuel_Portilla_CV_EN.pdf",
 
     "skills-heading": "My Skills",
+    "ordered": "(Ordered Alphabetically)",
 
     skills: {
       "skill-section-1": "Programming & Data",
       "skill-section-2": "Technologies & tools",
-      "skill-section-3": "Languages",
+      "skill-section-3": "Game Engines",
+      "skill-section-4": "Languages",
       "language-1": "English (C1)",
       "language-2": "Spanish (Native)",
     },
@@ -167,14 +169,16 @@ const translations = {
     "details-experience": "Experiencia",
     "experience-text": "2 años",
     "download-btn": "Descargar CV",
-    cvUrl: "cvs/CV_Manuel_Portilla_ES.pdf",
+    cvUrl: "/cvs/Manuel_Portilla_CV_ES.pdf",
 
     "skills-heading": "Mis Habilidades",
+    "ordered": "(Ordenadas Alfabeticamente)",
 
     skills: {
       "skill-section-1": "Programación y Datos",
       "skill-section-2": "Tecnologías y herramientas",
-      "skill-section-3": "Idiomas",
+      "skill-section-3": "Motores de Videojuegos",
+      "skill-section-4": "Idiomas",
       "language-1": "Inglés (C1)",
       "language-2": "Español (Nativo)",
     },
