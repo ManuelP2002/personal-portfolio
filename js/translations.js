@@ -2,7 +2,7 @@ const translations = {
   en: {
     // Navigation
     header: {
-      logo: "Goli's Portfolio",
+      logo: "Manuel's Portfolio",
     },
 
     nav: {
@@ -17,13 +17,7 @@ const translations = {
     flavor: "And I'm a",
     welcome: "Welcome to my portfolio website",
 
-    profession: [
-        'Systems Engineer',
-        'Game Developer', 
-        'Data Scientist',
-        'Game Designer',
-        'Data Analyst'
-    ],
+    profession: ["Systems Engineer", "Data Scientist", "Data Analyst"],
 
     "my-work-btn": "My work",
     "contact-me-btn": "Contact me",
@@ -39,9 +33,10 @@ const translations = {
     "learning-stat": "Learning",
     "adaptability-stat": "Adaptability",
     "bio-heading": "BIO",
-    "bio-text-1": "Innovative Systems Engineer specializing in multimedia development, including video game creation, data science, and data analysis. Passionate about leveraging agile methodologies and IT service management under the ITIL model to drive efficiency and scalability.",
-    "bio-text-2": "Dedicated to crafting high-quality, maintainable software by implementing clean code, best practices, and thorough documentation. Adept at problem-solving, optimizing workflows, and fostering collaborative environments to deliver impactful solutions.",
-    "bio-text-3": "Continuously learning and building new projects to enhance my skills, stay ahead of industry trends, and push the boundaries of innovation.",
+    "bio-text-1":
+      "I am a Systems Engineer and Data Analyst focused on turning data into actionable insights. My experience includes building ETL pipelines, performing exploratory data analysis, and developing dashboards using Python, SQL, and BI tools.",
+    "bio-text-2":
+      "I am currently studying a Master’s degree in Data Science, with a strong interest in applied analytics and machine learning. I enjoy working on well-structured solutions, writing clean and maintainable code, and continuously learning to improve how data supports decision-making.",
     "details-heading": "DETAILS",
     "details-email": "Email",
     "details-location": "Location",
@@ -53,7 +48,7 @@ const translations = {
     cvUrl: "/cvs/CV_Manuel_Portilla_EN.pdf",
 
     "skills-heading": "My Skills",
-    "ordered": "(Ordered Alphabetically)",
+    ordered: "(Ordered Alphabetically)",
 
     skills: {
       "skill-section-1": "Programming & Data",
@@ -85,11 +80,13 @@ const translations = {
 
       // Project #3
       "project-3-heading": "Space X Falcon 9 landing predictions",
-      "project-3-description": "Using Machine Learning to predict successful launches of the Falcon 9 Model",
+      "project-3-description":
+        "Using Machine Learning to predict successful launches of the Falcon 9 Model",
 
       // Project #4
       "project-4-heading": "Simple crossword",
-      "project-4-description": "Simple 2D crossword game, custom crosssword creation",
+      "project-4-description":
+        "Simple 2D crossword game, custom crosssword creation",
     },
 
     "view-more-btn": "View More Projects",
@@ -103,8 +100,10 @@ const translations = {
     "form-subject": "Subject",
     "form-message": "Your Message",
     "form-submit": "Send Message",
-    "footer-description-1": "Developing creative and fun experiences",
-    "footer-description-2": "Working efficiently with data and insights",
+    "footer-description-1":
+      "Data analysis, ETL pipelines, and data-driven decision support",
+    "footer-description-2":
+      "Turning data into actionable insights through analysis and analytics",
     "footer-links": "Quick Links",
 
     footer: {
@@ -121,7 +120,7 @@ const translations = {
   es: {
     // Navigation
     header: {
-      logo: "Portafolio de Goli",
+      logo: "Portafolio de Manuel",
     },
 
     nav: {
@@ -137,11 +136,9 @@ const translations = {
     welcome: "Bienvenido a mi portafolio web",
 
     profession: [
-        'Ingeniero de Sistemas',
-        'Desarrollador de Videojuegos', 
-        'Científico de Datos',
-        'Diseñador de Videojuegos',
-        'Analista de Datos'
+      "Ingeniero de Sistemas",
+      "Científico de Datos",
+      "Analista de Datos",
     ],
 
     "my-work-btn": "Mi trabajo",
@@ -158,9 +155,10 @@ const translations = {
     "adaptability-stat": "Adaptabilidad",
     "team-work-stat": "Trabajo en Equipo",
     "bio-heading": "BIOGRAFÍA",
-    "bio-text-1": "Ingeniero de Sistemas innovador, especializado en desarrollo multimedia, incluyendo creación de videojuegos, ciencia de datos y análisis de datos. Apasionado por aplicar metodologías ágiles y gestión de servicios de TI bajo el modelo ITIL para impulsar la eficiencia y escalabilidad.",
-    "bio-text-2": "Comprometido con la creación de software de alta calidad y fácil mantenimiento, implementando código limpio, mejores prácticas y documentación detallada. Hábil en resolución de problemas, optimización de flujos de trabajo y en fomentar entornos colaborativos para entregar soluciones impactantes.",
-    "bio-text-3": "En constante aprendizaje y desarrollo de nuevos proyectos para mejorar mis habilidades, mantenerme a la vanguardia del sector y ampliar los límites de la innovación.",
+    "bio-text-1":
+      "Soy Ingeniero de Sistemas y Analista de Datos, enfocado en transformar datos en información accionable. Tengo experiencia construyendo pipelines de ETL, realizando análisis exploratorio de datos y desarrollando dashboards utilizando Python, SQL y herramientas de BI.",
+    "bio-text-2":
+      "Actualmente curso una Maestría en Ciencia de Datos, con un fuerte interés en analítica aplicada y aprendizaje automático. Disfruto trabajar en soluciones bien estructuradas, escribir código limpio y mantenible, y aprender de forma continua para mejorar cómo los datos apoyan la toma de decisiones.",
     "details-heading": "DETALLES",
     "details-email": "Correo",
     "details-location": "Ubicación",
@@ -172,7 +170,7 @@ const translations = {
     cvUrl: "/cvs/CV_Manuel_Portilla_ES.pdf",
 
     "skills-heading": "Mis Habilidades",
-    "ordered": "(Ordenadas Alfabeticamente)",
+    ordered: "(Ordenadas Alfabeticamente)",
 
     skills: {
       "skill-section-1": "Programación y Datos",
@@ -193,11 +191,10 @@ const translations = {
     "projects-heading": "Mis Proyectos",
 
     projects: {
-      
-
       // Project #1
       "project-1-heading": "Chrono Pals",
-      "project-1-description": "Roguelike multijugador 2D, con generación procedural",
+      "project-1-description":
+        "Roguelike multijugador 2D, con generación procedural",
 
       // Project #2
       "project-2-heading": "Chrono Pals DDJ",
@@ -205,8 +202,9 @@ const translations = {
 
       // Project #3
       "project-3-heading": "Space X Falcon 9 predicciones de aterrizaje",
-      "project-3-description": "Usando Machine Learning para predecir aterrizajes exitosos del modelo Falcon 9",
-       
+      "project-3-description":
+        "Usando Machine Learning para predecir aterrizajes exitosos del modelo Falcon 9",
+
       // Project #4
       "project-4-heading": "Crucigrama simple",
       "project-4-description": "Crucigrama 2D simple, personalizable",
@@ -223,8 +221,10 @@ const translations = {
     "form-subject": "Asunto",
     "form-message": "Tu Mensaje",
     "form-submit": "Enviar Mensaje",
-    "footer-description-1": "Desarrollando experiencias creativas y divertidas",
-    "footer-description-2": "Trabajando con datos y perspectivas de manera eficiente",
+    "footer-description-1":
+      "Análisis de datos, pipelines ETL y soporte a la toma de decisiones basada en datos",
+    "footer-description-2":
+      "Transformando datos en información accionable mediante análisis y analítica",
     "footer-links": "Enlaces Rápidos",
 
     footer: {
